@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
 
+<head>
+	<meta charset="UTF-8">
+	<title>計算機</title>
+</head>
+
+<body>
+	<h1>計算機</h1>
+	<form action="calculation" method="post">
+		<input type="text" name="leftNum">
+		<select name="operations">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="×">×</option>
+			<option value="÷">÷</option>
+			<input type="text" name="rightNum">
+			<input type="submit" value="=">
+		</select>
+
+	</form>
+	<p th:text="${result}"></p>
+	<p th:text="${error}"></p>
 </body>
+
 </html>
