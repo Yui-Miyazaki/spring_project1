@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>動物検索</title>
+	<meta charset="utf-8" />
+</head>
+
+<body>
+	<h1>動物検索</h1>
+	<form action="animalDetail" method="post">
+		<select name="id">
+			<option th:each="animal : ${animalsList}" th:text="${animal.japaneseName}" th:value="${animal.id}">
+				
+			</option>
+			<input type="submit" value="検索">
+		
+		</select>
+		
+		
+	</form>
+</body>
