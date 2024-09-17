@@ -9,7 +9,7 @@
 <body>
 	<h1>動物詳細画面</h1>
 	<ul>
-		<li th:each="animal : ${animalsList}">
+		<li th:each="animal : ${animalDetail}">
 			<p th:text="'No：' + ${animal.id}"></p>
 			<p th:text="'英名：' + ${animal.name}"></p>
 			<p th:text="'和名：' + ${animal.japaneseName}"></p>
